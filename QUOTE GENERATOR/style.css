@@ -1,0 +1,117 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    height: 100vh;
+    background-color: #BCB6FF;
+}
+.container
+{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15rem;
+}
+.box
+{
+    height: 20rem;
+    width: 35rem;
+    background-color: #B8E1FF;
+    border-radius: 1rem;
+    padding: 2rem;  
+    
+   
+    
+
+}
+#heading
+{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration-line: underline;
+    color: brown;
+    
+}
+button
+{
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 1rem;
+  background-color: #82ABA1;
+  cursor: pointer;
+  display: block;
+  margin: 1rem auto;
+}
+button:hover
+{
+    background-color: rgb(56, 54, 54);
+    color: white;
+    transform: scale(1.05);
+    box-shadow:1px 1px 1px 1px(0,0,0,0.3) ;
+}
+
+#quotes
+{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+p
+{
+font-style: italic;
+
+}
+
+
+/* Media query for smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .box {
+        padding: 15px;
+    }
+    #quotes {
+        font-size: 16px;
+        padding: 8px;
+    }
+    #generate {
+        padding: 8px 15px;
+    }
+}
+
+/* Media query for even smaller screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .box {
+        padding: 10px;
+    }
+    #quotes {
+        font-size: 14px;
+        padding: 5px;
+    }
+    #generate {
+        padding: 5px 10px;
+    }
+}
+
+/* Media query for portrait orientation on mobile devices */
+@media (orientation: portrait) and (max-width: 768px) {
+    .box {
+        padding: 12px;
+    }
+    #quotes {
+        font-size: 15px;
+        padding: 6px;
+    }
+    #generate {
+        padding: 6px 12px;
+    }
+}
